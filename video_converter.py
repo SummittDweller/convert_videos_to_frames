@@ -30,7 +30,7 @@ def one_video_to_frames(video_path, save_rate=5, save_extension=".jpg"):
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)
                 
-            img_path = save_dir + str(img_counter) + save_extension
+            img_path = save_dir + f"{img_counter:04d}" + save_extension
             img_counter+=1
             
             cv2.imwrite(img_path, frame)
