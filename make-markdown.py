@@ -62,8 +62,7 @@ def frame_dir_to_markdown(dir, prefix, ext="png"):
 
 def add_file_to_markdown(path, md, prefix):
     base = os.path.basename(path)
-    md.write("{{% figure title='Image file is " + base + "' src='" + prefix + "/" + base + " %}}  \n\n") 
-
+    md.write('{{% figure title="Image file is ' + base + '" src="' + prefix + '/' + base + '" %}}  \n\n') 
 
 ## Main
 
